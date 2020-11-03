@@ -61,5 +61,27 @@ BLAST has produced a small database for the input genome which is stored in wd/B
   ```
   
   
+  * you can either run your blast or download the blast outputs here.
   
   
+   In this case, please note that the output format is slightly different from the one presented during the course and produced by launch_blast.sh. Don't worry, the format is still tabular but the order of columns has changed, so please check the consistency of your columns between the output (either downloaded or produced with launch_blast.sh) and your parser. The format in the blast_outputs.tar is:
+   
+   
+    query id, subject id, % identity, alignment length, mismatches, gap opens, gaps, q. start, q. end, s. start, s. end, evalue, bit score, query length, subject length
+  
+ * move your archive to a new directory (Blast_outputs for example) and extract the files as follows:
+ 
+ ```  
+ mkdir Blast_outputs      # create your new dir, of course, it implies that you are in your working dir
+ mv path_were_the_archive_is_stored/blast_outputs.tar.gz ./Blast_outputs  # move the archive from your download dir (in this case you must write the complete path ~/Downloads/path_to_wd/Blast_outputs) or do it manually!
+ cd Blast_outputs/ 
+ gunzip blast_outputs.tar.gz  # unzip your file
+ tar -xvf blast_outputs.tar # untar your file
+ 
+ ```
+ 
+ and don't forget to check taht the download went well (you expect a 349M file); particularly check the number of blast outputs (21x21) with 
+ 
+ ``` 
+ ls | wc
+ ```
