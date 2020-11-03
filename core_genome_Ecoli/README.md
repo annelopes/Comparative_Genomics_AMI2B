@@ -61,7 +61,11 @@ BLAST has produced a small database for the input genome which is stored in wd/B
   ```
   
   
-  * you can either run your blast or download the blast outputs here.
+  * you can either run your blast or download the blast outputs here:
+  
+  ```
+  https://transfert.u-psud.fr/d5upkb8
+  ```
   
   
    In this case, please note that the output format is slightly different from the one presented during the course and produced by launch_blast.sh. Don't worry, the format is still tabular but the order of columns has changed, so please check the consistency of your columns between the output (either downloaded or produced with launch_blast.sh) and your parser. The format in the blast_outputs.tar is:
@@ -80,7 +84,7 @@ BLAST has produced a small database for the input genome which is stored in wd/B
  
  ```
  
- and don't forget to check taht the download went well (you expect a 349M file); particularly check the number of blast outputs (21x21) with 
+ and don't forget to check taht the download went well; particularly check the number of blast outputs (21x21) with 
  
  ``` 
  ls | wc
