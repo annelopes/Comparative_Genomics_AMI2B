@@ -64,7 +64,7 @@ BLAST has produced a small database for the input genome which is stored in wd/B
   * you can either run your blast or download the blast outputs here:
   
   ```
-  https://transfert.u-psud.fr/d5upkb8
+  https://transfert.u-psud.fr/XXXXXX
   ```
   
   
@@ -77,7 +77,7 @@ BLAST has produced a small database for the input genome which is stored in wd/B
  
  ```  
  mkdir Blast_outputs      # create your new dir, of course, it implies that you are in your working dir
- mv path_were_the_archive_is_stored/blast_outputs.tar.gz ./Blast_outputs  # move the archive from your download dir (in this case you must write the complete path ~/Downloads/path_to_wd/Blast_outputs) or do it manually!
+ mv path_where_the_archive_is_stored/blast_outputs.tar.gz ./Blast_outputs  # move the archive from your download dir (in this case you must write the complete path ~/Downloads/path_to_wd/Blast_outputs) or do it manually!
  cd Blast_outputs/ 
  gunzip blast_outputs.tar.gz  # unzip your file
  tar -xvf blast_outputs.tar # untar your file
